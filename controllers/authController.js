@@ -25,18 +25,20 @@ exports.signIn = function (req, res, next) {
 };
 
 exports.signUp = async (req, res) => {
-  let user = await User.findOne({ username: req.body.username });
+  let user = await User.findOne({ email: req.body.email });
   if (user) {
-    return console.log("This user already exists!");
+    console.log("This user already exists!");
+    res.status(400);
+    return res.send("This user already exists!!!");
   }
 
   if (!user) {
     const newUser = {
-      username: req.body.username,
+      email: req.body.email,
       password: req.body.password,
     };
 
     User.create(newUser);
+    return res.send("User added!");
   }
-  return res.send("User added!");
 };

@@ -4,7 +4,6 @@ const morgan = require("morgan");
 const colors = require("colors");
 const passport = require("passport");
 const session = require("express-session");
-const bcrypt = require("bcrypt");
 const connectDB = require("./config/db");
 const app = express();
 const usePassport = require("./config/passport");

@@ -55,6 +55,7 @@ app.get("/protected", ensureAuth, (req, res) => {
 
 app.use("/api/v1/example", exampleRoute);
 app.use("/auth", require("./routes/auth"));
+app.use("/user", require("./routes/user"));
 
 //=============== PORT =================
 

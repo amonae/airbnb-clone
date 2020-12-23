@@ -4,6 +4,10 @@ export default function Signup() {
   return (
     <form action="http://localhost:5000/auth/signup" method="post">
       <div>
+        <label>Username:</label>
+        <input type="text" name="username" />
+      </div>
+      <div>
         <label>Email:</label>
         <input type="text" name="email" />
       </div>

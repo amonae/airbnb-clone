@@ -19,6 +19,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "start-fe": "react-scripts start",
     "start": "concurrently \"cd ../ && nodemon server\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "react-scripts/eslint-webpack-plugin": "2.3.0"
   }
 }

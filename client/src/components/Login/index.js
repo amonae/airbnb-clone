@@ -12,10 +12,6 @@ import {
   SignUpOption
 } from "components/Login/LoginElements";
 
-// do a login/signup tab feature
-// when you click login, it renders the login "page" component
-// when you click signup, renders signup "page"
-// create an onClick function that will render either one conditionally
 export default function LoginPage() {
   const [switchTo, setSwitchTo] = useState('login');
 

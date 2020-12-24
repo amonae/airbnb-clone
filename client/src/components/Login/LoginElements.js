@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {NavLink} from 'react-router-dom';
 
 // export const LoginContainer = styled.div`
 //   background: url(${loginBg});
@@ -14,6 +15,7 @@ export const LoginContainer = styled.div`
   background-color: #e0e0e0;
   width: 100vw;
   height: 100vh;
+  font-family: 'Arial', sans-serif;
 `;
 
 export const LoginBox = styled.div`
@@ -34,12 +36,41 @@ export const LoginBox = styled.div`
   /* outline: 1px solid red; */
 `;
 
-export const LoginForm = styled.form`
+export const LoginFormContainer = styled.div`
+  
   grid-column-start: 2;
   grid-column-end: 3;
   font-size: 3rem;
-  padding: 20px;
+  padding: 6rem 4rem;
 `;
+
+export const SignInSignUpContainer = styled.div`
+display: flex;
+justify-content: space-between;
+margin-bottom: 2rem;
+`
+
+export const Option = styled(NavLink)`
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 900;
+  word-spacing: -0.3rem;
+  cursor: pointer;
+  color: #CCCCCC;
+  
+
+  &.active {
+    color: #000;
+    border-bottom: 4px solid black;
+  }
+`
+
+export const SignInOption = styled(Option)`
+  margin-right: 1rem;
+`
+
+export const SignUpOption = styled(Option)`
+`
 
 export const ColorBlock = styled.div`
   background-color: #ffeb3b;
@@ -51,14 +82,32 @@ export const InputLabel = styled.label`
   display: block;
   font-size: 1rem;
   color: grey;
-  margin-bottom: -1.5rem;
+  margin-bottom: -1rem;
 `;
 
 export const InputField = styled.input`
+  width: 100%;
   font-size: 1.3rem;
-  background-color: lightgray;
+  background-color: #f7f7f7;
   color: #000;
   border: none;
-  border-radius: 3px;
-  height: 30px;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
 `;
+
+export const LoginButton = styled.input`
+  display: block;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #0A0ADB;
+  padding: 10px 30px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+`

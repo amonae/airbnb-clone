@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router,
   useParams,
 } from "react-router-dom";
-import Hero from "components/Hero/index.js";
+import Hero from "./components/Hero/index.js";
 import LoginPage from "components/Login";
 import Signup from "components/Signup";
 

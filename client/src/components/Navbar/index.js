@@ -5,7 +5,11 @@ import {
   Buttons,
   LoginBtn,
   SignupBtn,
+  NavMenu,
+  NavBrand,
+  ProfileIcon
 } from "components/Navbar/NavbarElements";
+
 
 export function Navbar() {
   const style = {
@@ -15,13 +19,18 @@ export function Navbar() {
   };
   return (
     <Nav style={style}>
-      <Logo>
-        <span style={{ color: "#389ffe" }}>X</span>PLOR
-      </Logo>
-      <Buttons>
-        <LoginBtn>Login</LoginBtn>
-        <SignupBtn>Sign Up</SignupBtn>
-      </Buttons>
+      <NavBrand>
+        <Logo>
+          <span style={{ color: "#389ffe" }}>X</span>PLOR
+        </Logo>
+      </NavBrand>
+      <NavMenu>
+        <Buttons>
+          <LoginBtn>Login</LoginBtn>
+          <SignupBtn>Sign Up</SignupBtn>
+          <ProfileIcon />
+        </Buttons>
+      </NavMenu>
     </Nav>
   );
 }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {FaUserCircle} from 'react-icons/fa'
 
 export const Nav = styled.div`
   width: 100%;
@@ -13,11 +14,19 @@ export const Nav = styled.div`
   /* outline: 1px solid red; */
 `;
 
+export const NavBrand = styled.div`
+
+`
+
 export const Logo = styled.div`
   font-family: Poppins, "sans-serif";
   font-size: 2em;
   font-weight: 700;
 `;
+
+export const NavMenu = styled.div`
+
+`
 
 export const Buttons = styled.div`
   /* outline: 1px solid red; */
@@ -43,3 +52,8 @@ export const SignupBtn = styled(LoginBtn)`
   margin-left: 1.75rem;
   color: #000;
 `;
+
+
+export const ProfileIcon = styled(FaUserCircle)`
+  font-size: 3rem;
+`

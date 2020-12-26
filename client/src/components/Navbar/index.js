@@ -12,13 +12,8 @@ import {
 
 
 export function Navbar() {
-  const style = {
-    position: "absolute",
-    background: "transparent",
-    boxShadow: "none",
-  };
   return (
-    <Nav style={style}>
+    <Nav>
       <NavBrand>
         <Logo>
           <span style={{ color: "#389ffe" }}>X</span>PLOR
@@ -26,8 +21,6 @@ export function Navbar() {
       </NavBrand>
       <NavMenu>
         <Buttons>
-          <LoginBtn>Login</LoginBtn>
-          <SignupBtn>Sign Up</SignupBtn>
           <ProfileIcon />
         </Buttons>
       </NavMenu>

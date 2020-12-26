@@ -7,7 +7,9 @@ import {
   ListingCardBadges,
   ListingCardRatingBadge,
   ListingCardSaveBadge,
-  ListingCardPrice
+  ListingCardPrice,
+  HeartIcon,
+  StarIcon
 } from './ListingCardElements'
 
 export default function ListingCard() {
@@ -15,11 +17,11 @@ export default function ListingCard() {
     <ListingCardContainer>
       <ListingCardImg />
         <ListingCardInfo>
-          <ListingCardTitle>Lorem Ipsum Solum Dolet This Is Text</ListingCardTitle>
+          <ListingCardTitle><span style={{cursor: 'pointer'}}>Lorem Ipsum Solum Dolet This Is Text</span></ListingCardTitle>
           <ListingCardPrice>$45 /night</ListingCardPrice>
           <ListingCardBadges>
-            <ListingCardRatingBadge>4.5</ListingCardRatingBadge>
-            <ListingCardSaveBadge />
+            <ListingCardRatingBadge>4.5<StarIcon /></ListingCardRatingBadge>
+            <ListingCardSaveBadge><HeartIcon />Save</ListingCardSaveBadge>
           </ListingCardBadges>
         </ListingCardInfo>
     </ListingCardContainer>

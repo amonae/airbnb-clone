@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {MdFavoriteBorder} from 'react-icons/md';
+import {AiFillStar} from 'react-icons/ai';
 
 export const ListingCardContainer = styled.div`
   width: 255px;
@@ -40,6 +42,7 @@ export const ListingCardTitle = styled.div`
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #404040;
+  margin-top: 0.2rem;
   margin-bottom: 1rem;
 `
 
@@ -67,13 +70,36 @@ export const ListingCardRatingBadge = styled.div`
   color: white;
   font-size: 0.9rem;
   font-weight: 600;
-  padding: 5px 10px;
+  padding: 5px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 `
 
 export const ListingCardSaveBadge = styled.div`
   width: 59px;
   height: 23px;
-  border-radius: 7.7px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 7.9px;
+  color: grey;
   background-color: transparent;
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid rgba(0,0,0,0.18);
+  padding: 0px 10px 0 6px;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+`
+
+export const HeartIcon = styled(MdFavoriteBorder)`
+  font-size: 0.9rem;
+  color: grey;
+  font-weight: 800;
+`
+
+export const StarIcon = styled(AiFillStar)`
+  font-size: 1rem;
+  color: white;
 `

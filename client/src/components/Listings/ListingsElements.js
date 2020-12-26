@@ -5,11 +5,10 @@ export const ListingsPageContainer = styled.div`
   height: 100vh;
   width: 100vw;
   position: relative;
-  display: flex;
 `
 
 export const ListingsSection = styled.section`
-  height: 100vh;
+  height: calc(100vh - 80px);
   width: 60vw;
   background-color: white;
   padding: 20px 40px;
@@ -19,8 +18,13 @@ export const MapSection = styled.div`
   height: 100vh;
   width: 40vw;
   background-color: lightgrey;
-  position: sticky;
+  /* position: sticky; */
+  position: absolute;
+  display: block;
   padding-top: 80px;
+  left: auto;
+  right: 0;
+  bottom: 0;
   top: 0;
 `
 

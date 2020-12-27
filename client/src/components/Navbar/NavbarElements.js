@@ -6,12 +6,17 @@ export const Nav = styled.div`
   height: 80px;
   /* padding: 0 3rem; */
   background: #fff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.08);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4.8rem;
+  padding: 0 9rem;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
   /* outline: 1px solid red; */
+  
+  /* insert breakpoints here. change padding when you hit a certain breakpoint so the logo and profile icon wont be so far from sides */
 `;
 
 export const NavBrand = styled.div`
@@ -20,7 +25,7 @@ export const NavBrand = styled.div`
 
 export const Logo = styled.div`
   font-family: Poppins, "sans-serif";
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: 700;
 `;
 
@@ -33,6 +38,7 @@ export const Buttons = styled.div`
   width: fit-content;
   height: fit-content;
 `;
+
 export const LoginBtn = styled.button`
   height: 45px;
   width: 125px;
@@ -46,14 +52,8 @@ export const LoginBtn = styled.button`
   cursor: pointer;
 `;
 
-export const SignupBtn = styled(LoginBtn)`
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  margin-left: 1.75rem;
-  color: #000;
-`;
-
-
 export const ProfileIcon = styled(FaUserCircle)`
-  font-size: 3rem;
+  font-size: 2rem;
+  color: grey;
+  cursor: pointer;
 `

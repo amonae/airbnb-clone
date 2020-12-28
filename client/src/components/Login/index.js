@@ -24,13 +24,13 @@ export default function LoginPage() {
           <LoginFormContainer>
             <SignInSignUpContainer>
               <SignInOption onClick={() => setSwitchTo('login')} to={{
-                pathname: 'login/#login'
+                pathname: '/login'
               }}
-              activeClassName="active">Log in</SignInOption>
+              activeClassName="selected">Log in</SignInOption>
               <SignUpOption onClick={() => setSwitchTo('signup')} to={{
-                pathname: 'login/#signup'
+                pathname: '/login#register'
               }}
-              activeClassName="active">Sign up</SignUpOption>
+              activeClassName="selected">Sign up</SignUpOption>
             </SignInSignUpContainer>
             {
               switchTo === "login" ?

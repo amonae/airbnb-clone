@@ -12,18 +12,22 @@ import {
   StarIcon
 } from './ListingCardElements'
 
-export default function ListingCard() {
+import ListingCardCarousel from './ListingCardCarousel'
+
+export default function ListingCard(props) {
   return (
     <ListingCardContainer>
-      <ListingCardImg />
-        <ListingCardInfo>
-          <ListingCardTitle><span style={{cursor: 'pointer'}}>Lorem Ipsum Solum Dolet This Is Text</span></ListingCardTitle>
-          <ListingCardPrice>$45 /night</ListingCardPrice>
-          <ListingCardBadges>
-            <ListingCardRatingBadge>4.5<StarIcon /></ListingCardRatingBadge>
-            <ListingCardSaveBadge><HeartIcon />Save</ListingCardSaveBadge>
-          </ListingCardBadges>
-        </ListingCardInfo>
+      <ListingCardImg>
+        <ListingCardCarousel />
+      </ListingCardImg>
+      <ListingCardInfo>
+        <ListingCardTitle><span style={{cursor: 'pointer'}}>{props.title}</span></ListingCardTitle>
+        <ListingCardPrice>${props.price} /night</ListingCardPrice>
+        <ListingCardBadges>
+          <ListingCardRatingBadge>{props.rating}<StarIcon /></ListingCardRatingBadge>
+          <ListingCardSaveBadge><HeartIcon />Save</ListingCardSaveBadge>
+        </ListingCardBadges>
+      </ListingCardInfo>
     </ListingCardContainer>
   )
 }

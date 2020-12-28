@@ -58,11 +58,11 @@ export const Option = styled(NavLink)`
   cursor: pointer;
   color: #CCCCCC;
   
-
-  &.active {
-    color: #000;
-    border-bottom: 4px solid black;
+  &.selected {
+  color: #000;
+  border-bottom: 4px solid black;
   }
+  
 `
 
 export const SignInOption = styled(Option)`

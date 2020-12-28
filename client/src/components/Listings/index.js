@@ -16,9 +16,9 @@ export default function Listings() {
     <ListingsPageContainer>
       <ListingsSection>
         <ListingCards>
-          <ListingCard />
-          <ListingCard />
-          <ListingCard />
+          <ListingCard title="Lorem Ipsum Solum Dolet This Is Text" price="45" rating="4.5"/>
+          <ListingCard title="This Is Another Card" price="22" rating="4.3" />
+          <ListingCard title="Lorem Ipsum Solum Dolet This Is Text This Is Text" />
           <ListingCard />
           <ListingCard />
           <ListingCard />

@@ -9,7 +9,6 @@ export const ListingCardContainer = styled.div`
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 18px;
   height: 300px;
-  /* margin-right: 1rem; */
   margin-bottom: 1.5rem;
   box-shadow: 2.24px 3.36px 13.44px rgba(0, 0, 0, 0.04);
   overflow: hidden;
@@ -29,7 +28,6 @@ export const ListingCardImg = styled.div`
 `
 
 export const ListingCardInfo = styled.div`
-  /* position: absolute; */
   background-color: white;
   height: 50%;
   width: 100%;
@@ -50,14 +48,12 @@ export const ListingCardTitle = styled.div`
   top: 15%;
   right: 0;
   left: 0;
-  /* bottom: 0; */
 `
 
 export const ListingCardPrice = styled.div`
   font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
-  /* margin-bottom: 1.2rem; */
   color: rgba(0,0,0,0.3);
   position: absolute;
   top: 48%;

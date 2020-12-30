@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { FaUserCircle } from 'react-icons/fa';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
 
 export const Nav = styled.div`
   width: 100%;
@@ -49,4 +51,12 @@ export const ProfileIcon = styled(FaUserCircle)`
   font-size: 2rem;
   color: grey;
   cursor: pointer;
+`;
+
+export const ProfileIconContainer = styled(OverlayTrigger)``;
+
+export const Popup = styled(Popover)`
+  .arrow {
+    visibility: hidden;
+  }
 `;

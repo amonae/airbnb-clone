@@ -10,6 +10,7 @@ import Hero from "./components/Hero/index.js";
 import LoginPage from "components/Login";
 import Signup from "components/Signup";
 import Listings from "components/Listings";
+import AuthModal from 'components/AuthModal';
 
 function Home() {
   return <Hero />;
@@ -49,6 +50,7 @@ function App() {
       <Route path="/users" component={UserPage} />
       <Route path="/signup" component={SignupPage} />
       <Route path="/listings" component={ListingsPage} />
+      <Route path="/modal" component={AuthModal} />
     </Router>
   );
 }

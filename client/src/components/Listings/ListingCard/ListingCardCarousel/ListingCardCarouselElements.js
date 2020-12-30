@@ -6,7 +6,7 @@ export const ListingCardCarousel = styled(Carousel)`
   height: 100%;
 
   .carousel-item {
-    transition: transform .4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
   }
   .carousel-indicators {
     margin-bottom: 7px;
@@ -17,8 +17,10 @@ export const ListingCardCarousel = styled(Carousel)`
     width: 6px;
     height: 6px;
   }
-`
+`;
 
-export const NextBtn = styled.div``
+// style carousel buttons //
 
-export const PrevBtn = styled.div``
+// export const NextBtn = styled.div``
+
+// export const PrevBtn = styled.div``

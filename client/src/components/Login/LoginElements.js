@@ -35,7 +35,6 @@ export const Option = styled.a`
 
   &.active {
     color: #252525;
-    /* border-bottom: 4px solid black; */
   }
 `;
 

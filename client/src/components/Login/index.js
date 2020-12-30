@@ -28,9 +28,6 @@ export default function LoginPage(props) {
 
   return (
     <>
-      {/* <LoginContainer>
-        <LoginBox>
-          <ColorBlock /> */}
       <LoginFormContainer>
         <SignInSignUpContainer>
           <SignInOption
@@ -65,8 +62,6 @@ export default function LoginPage(props) {
           <p>This is the signup form</p>
         )}
       </LoginFormContainer>
-      {/* </LoginBox>
-      </LoginContainer> */}
     </>
   );
 }

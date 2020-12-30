@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { AuthModal as Modal, ModalTitle } from './AuthModalElements';
 import LoginPage from '../Login/index.js';
